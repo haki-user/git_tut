@@ -1,0 +1,67 @@
+git config --global user.name "...."
+git config --gl user.email "......"
+git config user.name
+git config --list #To list all the properties
+git config --global core.editor "C:/Program Files/Notepad++/notepad++.exe"
+
+
+#5th video git repo init commit and main branch
+
+git init
+git add licence.txt README.txt
+git add *.java
+git add .
+git status
+git status -s #without verbose
+cltr + l #to clear the git bash console
+git commit -m "init commit"
+*******imp******
+git status --help 
+*******opens doc page with manual*****
+git status -h  #in terminal
+git commit -a -m "new changes"
+
+#6 Git ignoring Git log
+Remove file from tracking
+git rm --cached filename
+git rm #it'll remove from filesystem too
+git rm -r --cached directory	#recursive remove all from
+ignore
+touch .gitignore	#touch allows to create files from any text editor or from console
+nano .gitignore
+To check the commit history
+git log 
+git log -2 #for last two
+git log --pretty=oneline
+
+#7 Git undoing things Vi text editor
+git commit --amend	#to commit to last commit
+git commit --amend --no-edit
+
+
+#8 GIT REMOTE REPOSITORIES
+git remote -v	#to check local repo is connected to remote.
+git remote add origin url	#origin is short name for remote repository.
+git push origin -u master	#u:upstream, 
+git clone url
+
+
+#SSH Connection
+SSH: Secure Socket Shell, It is a secure protocol that allows us to connect to a remote computer by using text based intereface.
+	Using SSH, we can easily log into another computer from anywhere and perform any commands. It is for to make remote connections to computers more secure.
+	Identify without username and password.
+	SSH keys public(may be on github) and private(on your computer).
+	Key pair is checked after that ssh connection is established. 
+	Reverse engineering of private key from public key is not possible.
+
+generate key: git gui->help->show ssh key-> generate ssh key.
+github-->settings-->ssh and gpg keys-->add ssh key.
+my gen ssh key(ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDBRsZ0z+0SzhuWj+0P3NncpobO5KTXFgTESrgFfmkGWl5PuT0PHzSSvND+M214oHLr4tBxqMvCsOK0xtPYnNVaFHBnnEZORq1yC0FSPlh0nsNHp27WezRtEA3arfotHSmm4mhxhQBWTtDfIBu+qdmwhy6Eu8mTrLFKoIE6Ic7G97vC+ob8ZdWkHyKm/cnKjEwc+9EZb37mZ1jE7sf5HNn4kWhZqQ9IIi+Ib+qiTfiUz6XZyQepvHSom2SRy++6OmbPx9VqEkR6DJlwsMh9+APk07fTSXxeYu8eG2a3npDcRRUX6M0jtJE2D6tXPkh0LD/PsHM3a2uHv2VMq/gjsnRdzNDZbdziCrgP9UTZmGd7X+gKMnYMfYlqNwkXD1pOzKfMUrR/ElVf0DmCiWp9ynIoUBqeFu+MAiebd+tflHeX/eu2otNo3EHh2CLJjTkyEuXXQM+DAJxOSouigw0CRlKDzhIJw1Qoj/wfoxg/dGAh1/gK0FvJ94JAaLNJwSI00hU= Adity@ad
+).
+Change HTTPS To SSH: 
+git remote set-url origin ssh(url/key idk)
+
+
+
+
+	
